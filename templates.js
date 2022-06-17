@@ -1,16 +1,12 @@
 export const TEMPLATES = {
   markdown: `
-# {{title}}
-by {{authors}}
-
-## Highlights and Notes
+# Notes
 
 {{#sections}}
-### {{sectionTitle}}
+## {{sectionTitle}}
 
 {{#highlights}}
-{{highlight}}
-**{{type}}** {{#page}}page: {{page}}{{/page}} {{#location}}location: {{location}}{{/location}}
+- {{highlight}} (Page: {{page}})
 
 {{/highlights}}
 {{/sections}}
